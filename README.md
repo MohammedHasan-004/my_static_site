@@ -17,4 +17,6 @@ The page also includes:
   - Instagram  
   - Twitter  
 
-## Project Structure  
+## Project Structure 
+this is the project URL
+https://mohammedhasan-004.github.io/my_static_site/

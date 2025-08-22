@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    
+}
+body{
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.home{
+    background-color: #0162be;
+    color: #fff;
+    height: 100vh;
+}
+#logo{
+    width:60px;
+    margin: 5px 0px;
+}
+.container{
+    margin:0 7rem;/*1rem =16 pixel*/
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    list-style: none;/* delete polet list*/
+    align-items: center;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding:25px 0px ;
+   
+}
+nav ul a{
+    padding: 10px 10px;
+    color: #fff;
+}
+.container2{
+    margin:10px;
+    padding:10px 0px;
+
+}
+h1{
+    font-size: 70px;
+}
+h2{
+    font-size: 50px;
+} 
+p{
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    width:60%;
+}
+.content-text{
+    animation:animation2 2s ease-out;
+}
+.btn{
+    background-color:transparent;
+     padding:10px 15px;
+     font-size: 14px;
+     border-radius:30px;
+     color: white;
+     border:1px solid white;
+     transition:all 1s;
+}
+.btn:hover{
+    background-color: #fff;
+    color:black;
+    border:1px solid blue
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+.pepsi-picture{
+    width:200px;
+    margin:0px 10px;
+    animation:animation1 1s ease-out;
+
+}
+.social{
+    margin-left: 48px;
+    font-size: 25px;
+    animation: animation1 1.5s ease-out;
+}
+.social i{
+    color: #fff;
+    margin:10px 0px;
+}
+.pepsitypes{
+   display: block;
+   width: 130px;
+   margin: auto;
+   animation:animation3 1.5s ease-out;
+
+}
+@keyframes animation1 {
+    0% {
+      transform: translateX(500px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+@keyframes animation2 {
+    0% {
+      transform: translateX(-500px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+@keyframes animation3 {
+    0% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+/*Tablet*/
+@media screen and (max-width:900px) {
+    .container{
+        margin:0px 16px;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    p{
+        width:100%;
+    }
+    .pepsi-picture{
+        width:150px;
+        margin: 20px 10px 0px;
+    }
+    .pepsitypes{
+        margin:auto;
+        display: block;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 25rem;
+    }
+    .social i{
+        margin:10px 0px;
+    }
+}
+@media(min-width:1508px) and (max-width:1600px)
+{
+    .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left:60px;
+        font-size: 30px;
+
+    }
+}
+/*mobile*/
+ @media (max-width:600px) {
+    nav{
+        display: block;
+    }
+    #logo{
+        margin: 0 auto 10px;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20rem;
+        margin-top: -3rem;
+        font-size:25px ;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    nav ul a{
+        font-size: 12px;
+    }
+    .pepsitypes{
+        margin-top: 20px;
+    }
+}
